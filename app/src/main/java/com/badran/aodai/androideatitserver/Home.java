@@ -345,7 +345,7 @@ public class Home extends AppCompatActivity
                 for (DataSnapshot postSnapShot:dataSnapshot.getChildren())
                 {
                     postSnapShot.getRef().removeValue();
-                    
+
                 }
 
             }
