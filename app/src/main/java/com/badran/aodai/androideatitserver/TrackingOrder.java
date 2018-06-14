@@ -125,7 +125,7 @@ public class TrackingOrder extends FragmentActivity implements OnMapReadyCallbac
 
             }
             else {
-                //Toast.makeText(this, "Couldn't get the location", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Couldn't get the location", Toast.LENGTH_SHORT).show();
 
                 Log.d("DEBUG","Couldn't get the location");
             }
@@ -308,7 +308,7 @@ public class TrackingOrder extends FragmentActivity implements OnMapReadyCallbac
     @Override
     protected void onStart() {
         super.onStart();
-        if (mGoogleApiClient !=null)
+        if (mGoogleApiClient != null)
             mGoogleApiClient.connect();
     }
 

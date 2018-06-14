@@ -102,7 +102,7 @@ public class OrderStatus extends AppCompatActivity {
         LayoutInflater inflater = this.getLayoutInflater();
         final View view = inflater.inflate(R.layout.update_order_layout,null);
 
-        spinner = (MaterialSpinner)findViewById(R.id.statusSpinner);
+        spinner = view.findViewById(R.id.statusSpinner);
         spinner.setItems("Placed","On my way","Shipped");
 
         alertDialog.setView(view);
